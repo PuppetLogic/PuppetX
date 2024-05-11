@@ -1,0 +1,3 @@
+[submodule "puppetlogic"]
+	path = puppetlogic
+	url = git@github.com:PuppetLogic/PuppetLogic.git
