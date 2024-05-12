@@ -1,13 +1,14 @@
 
-#include "utils/Chrono.h"
+#include "base/Chrono.h"
+#include "base/Logger.h"
 
 #include <iostream>
 
 int main()
 {
-    Chrono time;
-    time.start();
+    Chrono::start();
 
-    std::cout << "Hello, World! " << time.elapsed() << std::endl;
+    STATIC_LOG(Logger::Level::Info, "Puppet started");
+
     return 0;
 }
