@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(EXECUTABLE_NAME ${CMAKE_PROJECT_NAME}-test)
 add_executable(${EXECUTABLE_NAME})
 
-add_subdirectory(../puppetlogic/utils ${CMAKE_CURRENT_BINARY_DIR}/src/puppetlogic/utils EXCLUDE_FROM_ALL)
+add_subdirectory(../puppetlogic/base ${CMAKE_CURRENT_BINARY_DIR}/src/puppetlogic/base EXCLUDE_FROM_ALL)
 add_subdirectory(../puppetlogic/test ${CMAKE_CURRENT_BINARY_DIR}/tests)
 
 target_sources(${EXECUTABLE_NAME}
