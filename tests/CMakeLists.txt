@@ -23,12 +23,11 @@ target_include_directories(${EXECUTABLE_NAME}
         ${CMAKE_SOURCE_DIR}
         ${CMAKE_SOURCE_DIR}/puppetlogic
         ${CMAKE_SOURCE_DIR}/puppetlogic/test
-
-        ${GTEST_INCLUDE_DIRS}
 )
+
 target_link_libraries(${EXECUTABLE_NAME}
     PRIVATE
-        ${GTEST_LIBRARIES}
+        GTest::GTest
 )
 
 target_compile_options(${EXECUTABLE_NAME} PUBLIC -Wall)
